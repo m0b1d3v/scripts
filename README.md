@@ -1,2 +1,3 @@
-# scripts
-Small scripts for tedious tasks
+# Scripts
+
+Small scripts for tedious tasks.
