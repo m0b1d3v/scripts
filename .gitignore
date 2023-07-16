@@ -9,3 +9,6 @@
 __debug_bin
 .vscode
 .history
+
+# Intermediate files
+token.txt
