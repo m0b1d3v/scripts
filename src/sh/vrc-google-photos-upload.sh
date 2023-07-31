@@ -135,7 +135,7 @@ main() {
 
 		mimeType=$(file -i "$file" | cut -d' ' -f2)
 		mimeType=${mimeType::-1}
-		if [ "$mimeType" != "image/png" ] && [ "$mimeType" != "image/jpg" ]; then
+		if [ "$mimeType" != "image/png" ] && [ "$mimeType" != "image/jpg" ] && [ "$mimeType" != "image/jpeg" ]; then
 			continue
 		fi
 
