@@ -10,4 +10,5 @@ Small scripts for tedious tasks.
   - [WEBP](./src/sh/compress-image-webp.sh)
 - VRChat
   - [Creator info data formatter](./src/js/vrc-creator-info.js)
+  - [Google Albums photo uploader](./src/sh/vrc-google-photos-upload.sh)
   - [World info data formatter](./src/js/vrc-world-info.js)
