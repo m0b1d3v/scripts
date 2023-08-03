@@ -14,7 +14,6 @@ sync() {
 
 	rsync \
     	--compress \
-    	--delete \
     	--exclude '**.jpg.webp' \
     	--exclude '**.png.webp' \
     	--exclude '.git' \
@@ -34,5 +33,9 @@ sync() {
     	$globalFlags $source $destination
 }
 
-sync /mnt/c/Users/Mobi/Google/ /mnt/d/google-drive/
-sync /home/mobius_k/projects/ /mnt/d/projects/
+backupLocation=/mnt/c/Users/Mobi/Downloads/backup
+
+rm -rf $backupLocation
+mkdir $backupLocation
+sync /mnt/c/Users/Mobi/Google/ $backupLocation/google
+sync /home/mobius_k/projects/ $backupLocation/projects
